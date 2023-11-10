@@ -7,7 +7,7 @@ import numpy as np
 import os
 from PIL import Image
 
-# Set app style
+# app style
 app_style = """
     <style>
         body {
@@ -30,13 +30,12 @@ app_style = """
     </style>
 """
 
-# Apply app style
+
 st.markdown(app_style, unsafe_allow_html=True)
 
 # Title of the web app
 st.markdown('<h1 class="title">Face Recognition App</h1>', unsafe_allow_html=True)
 
-# Rest of the code remains the same...
 
 
 # Section 1: What is Face Recognition?
@@ -50,8 +49,8 @@ with col1:
             "Face Recognition is used for a variety of purposes, like unlocking phone screens, identifying criminals, "
             "and authorizing visitors.")
 with col2:
-    # st.markdown('<img src="E:\Meraki\Python\Face Recognition GitHUb\Picture1.png">', unsafe_allow_html=True)
-    image1 = Image.open('E:\Meraki\Python\Face Recognition GitHUb\Picture1.png')
+    # st.markdown('<img src="media\Picture1.png">', unsafe_allow_html=True)
+    image1 = Image.open('media\Picture1.png')
 
     st.image(image1, caption='')
 
@@ -65,7 +64,7 @@ st.write("The Face Recognition system uses Machine Learning to analyze and proce
 
 # Section 3: Teach the Computer to Recognize your Face
 st.markdown('<h2 class="header"> Teach the Computer to Recognize your Face </h2> ', unsafe_allow_html=True)
-image2 = Image.open('E:\Meraki\Python\Face Recognition GitHUb\Screenshot 2023-11-09 151026.png')
+image2 = Image.open('media\Screenshot 2023-11-09 151026.png')
 st.image(image2, caption='First Step')
 
 st.markdown('<h3 class="sub-header"> Step 1 – Collect Data </h3> ', unsafe_allow_html=True)
@@ -87,7 +86,7 @@ with col2:
 
 # step-2
 st.markdown('<h2 class="header"> Teach the Computer to Recognize your Face </h2> ', unsafe_allow_html=True)
-image2 = Image.open('E:\Meraki\Python\Face Recognition GitHUb\step-2.png')
+image2 = Image.open('media\step-2.png')
 st.image(image2, caption='Second Step')
 st.markdown('<h3 class="sub-header"> Step 2 – Train the Machine </h3> ', unsafe_allow_html=True)
 col1, col2 = st.columns(2)
@@ -98,8 +97,8 @@ The model learns from the patterns in the photos you’ve taken. It mostly takes
 """)
     
 with col2:
-    # st.markdown('<img src="E:\Meraki\Python\Face Recognition GitHUb\Picture1.png">', unsafe_allow_html=True)
-    image1 = Image.open('E:\Meraki\Python\Face Recognition GitHUb\Picture2.png')
+    # st.markdown('<img src="Picture1.png">', unsafe_allow_html=True)
+    image1 = Image.open('media\Picture2.png')
 
     st.image(image1, caption='')
 
@@ -111,12 +110,12 @@ with col1:
 """)
     
 with col2:
-    # st.markdown('<img src="E:\Meraki\Python\Face Recognition GitHUb\Picture1.png">', unsafe_allow_html=True)
-    image1 = Image.open('E:\Meraki\Python\Face Recognition GitHUb\Picture3.png')
+    # st.markdown('<img src="media\Picture1.png">', unsafe_allow_html=True)
+    image1 = Image.open('media\Picture3.png')
 
     st.image(image1, caption='')
 
-image1 = Image.open('E:\Meraki\Python\Face Recognition GitHUb\Picture4.png')
+image1 = Image.open('media\Picture4.png')
 
 st.image(image1, caption='')
 
